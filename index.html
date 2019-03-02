@@ -5,6 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <h1 id="title">The good <span>Coffee</span> Samaritan</h1>
+      <div class="wrapper">
+        <div class="noa-info">
+          <h3>Wanna buy me Coffee?</h3>
+          <p id="description">
+            If you feel like buying a poor coffee addict a nice cup of coffee
+            and chat about boring useless things give me a call!
+          </p>
+          <ul>
+            <li>5th Avenue</li>
+            <li>(123)456 7890</li>
+            <li>noabyte@gmail.com</li>
+          </ul>
+        </div>
+        <div class="contact">
+          <h3>Mail Me if you want to buy me a coffee</h3>
+          <form id="survey-form">
+            <p>
+              <label id="name-label">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Write your name"
+                required
+              />
+            </p>
+            <p>
+              <label id="email-label">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="write your email"
+                required
+              />
+            </p>
+            <p>
+              <label id="number-label">Number of Cups</label>
+              <input
+                type="number"
+                id="number"
+                name="number"
+                placeholder="how many cups?"
+                min="1"
+                max="9"
+              />
+            </p>
+            <p>
+              <label>Size of the cups</label>
+              <input type="radio" name="size" value="small" /> Small<br />
+              <input type="radio" name="size" value="medium" /> Medium<br />
+              <input type="radio" name="size" value="large" /> Large
+            </p>
+            <p>
+              <label>Type of Coffee</label>
+              <input
+                type="checkbox"
+                name="coffeetype"
+                value="Espresso"
+              />Espresso<br />
+              <input
+                type="checkbox"
+                name="coffeetype"
+                value="Cappuccino"
+              />Cappuccino<br />
+              <input
+                type="checkbox"
+                name="coffeetype"
+                value="Irishcoffee"
+                checked
+              />Irishcoffee
+            </p>
+            <p>
+              <label>Where?</label>
+              <select name="location" id="dropdown">
+                <option value="starbucks">Starbucks</option>
+                <option value="juanvaldez">Juan Valdez</option>
+                <option value="home">At my place </option>
+              </select>
+            </p>
+            <p class="full">
+              <label>What do u want in return?</label>
+              <textarea name="explanation" rows="5"></textarea>
+            </p>
+            <p class="full"><button id="submit">Submit</button></p>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
 </html>
